@@ -1,0 +1,135 @@
+body {
+  background-color: #5EBAD1;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+:focus {
+  outline: 4px solid #000000;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+li {
+  list-style: none;
+  margin: 20px;
+}
+
+.course_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.course_container img {
+  margin: 20px;
+  width: 200px;
+}
+
+.course_container h2,
+.course_container p,
+.course_container .button,
+.course_container button {
+  align-self: center;
+  margin: 10px;
+}
+
+.course_container h2,
+.course_container p.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.course_container .button,
+.course_container button {
+  border: solid 1px black;
+  color: black;
+  padding: 20px;
+}
+
+.footer a,
+footer a {
+  color: rgb(86, 169, 207);
+}
+
+.presentation_container {
+  display: block;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.presentation_container img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.presentation_container p,
+.presentation_container h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline;
+  margin: auto;
+  background-color: #000;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.btn {
+  font-size: 2em;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  display: inline-block;
+  padding: 20px;
+}
+
+.btn:focus {
+  outline: 4px solid #000000;
+}
+
+.container {
+  display: inline-block;
+}
+
+.form_container {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+form label,
+form .label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+form label,
+form .label {
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  border-bottom: 3px solid #000000;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: #ffffff;
+}

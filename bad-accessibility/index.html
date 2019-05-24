@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Semantics and Accessibility for codenares</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Inicio</li>
+            <li>Alumnado</li>
+            <li>Profesorado</li>
+            <li tabindex="999">Contacto</li>
+        </ul>
+    </div>
+
+    <div class="presentation_container">
+        <img src="images/courses.jpg" alt="Imagen de cursos">
+        <p class="title">Cursos disponibles</p>
+    </div>
+
+    <section>
+        <div class="course_container">
+            <img src="images/vue_logo.png"  tabindex="99" alt="Logo de Vue">
+            <div class="course_text">
+                <p class="subtitle">Curso Vue</p>
+                <p>Aprende a crear una página web paso a paso con esta tecnología</p>
+            </div>
+            <div role="button" class="button" onclick="enroll()">Apuntarse</div>
+        </div>
+        <div class="course_container">
+            <img src="images/react_logo.png" alt="Logo de react">
+            <div class="course_text">
+                <p class="subtitle">Curso React</p>
+                <p>Aprende a crear una página web paso a paso con esta tecnología</p>
+            </div>
+            <div role="button" class="button" onclick="enroll()">Apuntarse</div>
+        </div>
+        <div class="course_container">
+            <img src="images/angular_logo.png" alt="Logo de angular">
+            <div class="course_text">
+                <p class="subtitle">Curso Angular</p>
+                <p>Aprende a crear una página web paso a paso con esta tecnología</p>
+            </div>
+            <div role="button" class="button" onclick="enroll()">Apuntarse</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <p class="subtitle">Buttons (Bar order)</p>
+            <button class="btn" style="float: right;">Paso 1</button>
+            <button class="btn">Paso 2</button>
+            <button class="btn">Paso 3</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <p class="subtitle"> Div vs Link vs Button</p>
+        <div class="btn" onclick="alert('something')">do something</div>
+        <a href="#" class="btn" onclick="alert('something')">do something</a>
+        <button type="button" class="btn" onclick="alert('something')">do something</button>
+    </section>
+
+    <section class="form_container">
+        <p class="subtitle">Formulario de contacto</p>
+
+        <form action="">
+            <div class="label">Name</div>
+            <input type="text" name="name">
+            <div class="label">Email</div>
+            <input type="text" name="email">
+            <div class="label">Subject</div>
+            <input type="text" name="lname">
+            <div class="label">Message</div>
+            <textarea rows="4" cols="50"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <div class="footer">
+        <a href="">Para más información contáctanos</a>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
