@@ -13,7 +13,7 @@ You have here a list of hints to help you to understand:
 2. Review headings
 3. Review links and buttons (hint: menu links, buttons)
 4. Review form controls (inputs with labels, button texts)
-5. Review landmarks (hint: header, main, article, footer)
+5. Review landmarks (hint: header, main, footer)
 6. Check alternative texts.
 7. Review focusable elements, some of them could be not needed to be focusable. (tabindex)
 8. You need to add a link for go to the content
